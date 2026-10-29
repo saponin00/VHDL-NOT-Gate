@@ -1,0 +1,187 @@
+[
+  {
+    "circuit": "P1_logic",
+    "entity": "logic4",
+    "file": "01_logic4.vhd",
+    "title": "1. Four-input AND and OR",
+    "inputs": [
+      [
+        "a",
+        1,
+        1
+      ],
+      [
+        "b",
+        1,
+        1
+      ],
+      [
+        "c",
+        1,
+        1
+      ],
+      [
+        "d",
+        1,
+        1
+      ]
+    ],
+    "outputs": [
+      [
+        "out1",
+        1
+      ],
+      [
+        "out2",
+        1
+      ]
+    ],
+    "notes": [
+      "AND = 1 only when a=b=c=d=1.",
+      "OR = 1 when at least one input is 1."
+    ]
+  },
+  {
+    "circuit": "P2_mux",
+    "entity": "mux8_1",
+    "file": "02_mux8_1.vhd",
+    "title": "2. Eight-to-one multiplexer",
+    "inputs": [
+      [
+        "a",
+        1,
+        0
+      ],
+      [
+        "b",
+        1,
+        0
+      ],
+      [
+        "c",
+        1,
+        0
+      ],
+      [
+        "d",
+        1,
+        0
+      ],
+      [
+        "e",
+        1,
+        1
+      ],
+      [
+        "f",
+        1,
+        0
+      ],
+      [
+        "g",
+        1,
+        0
+      ],
+      [
+        "h",
+        1,
+        0
+      ],
+      [
+        "ch",
+        3,
+        4
+      ]
+    ],
+    "outputs": [
+      [
+        "data",
+        1
+      ]
+    ],
+    "notes": [
+      "ch: 000=a, 001=b, 010=c, 011=d, 100=e, 101=f, 110=g, 111=h.",
+      "Initial example: only e=1; ch=100 selects e, so data=1."
+    ]
+  },
+  {
+    "circuit": "P3_letters",
+    "entity": "letter_display",
+    "file": "03_letter_display.vhd",
+    "title": "3. Letter decoder and seven-segment display",
+    "inputs": [
+      [
+        "en",
+        1,
+        1
+      ],
+      [
+        "dat",
+        3,
+        0
+      ]
+    ],
+    "outputs": [
+      [
+        "display",
+        8
+      ]
+    ],
+    "notes": [
+      "dat: 0=A, 1=b, 2=C, 3=d, 4=F, 5=G; 6/7=blank.",
+      "en=0 blanks the display. Output order: abcdefgdp."
+    ]
+  },
+  {
+    "circuit": "P4_vote25",
+    "entity": "vote25",
+    "file": "04_vote25.vhd",
+    "title": "4. Twenty-five-person majority vote",
+    "inputs": [
+      [
+        "vt",
+        25,
+        8191
+      ]
+    ],
+    "outputs": [
+      [
+        "result",
+        1
+      ]
+    ],
+    "notes": [
+      "vt is hexadecimal. 0000FFF = 12 yes votes; 0001FFF = 13 yes votes.",
+      "A strict majority requires at least 13 votes."
+    ]
+  },
+  {
+    "circuit": "P5_count13",
+    "entity": "count13_display",
+    "file": "05_count13_display.vhd",
+    "title": "5. Count ones in thirteen bits and display the count",
+    "inputs": [
+      [
+        "vt",
+        13,
+        8191
+      ],
+      [
+        "en",
+        1,
+        1
+      ]
+    ],
+    "outputs": [
+      [
+        "display",
+        8
+      ]
+    ],
+    "notes": [
+      "vt is hexadecimal. 0005 -> 2; 03FF -> A; 1FFF -> d.",
+      "Thirteen bits contain at most thirteen ones. E/F cannot be reached.",
+      "en=0 blanks all segments, including the decimal point."
+    ]
+  }
+]

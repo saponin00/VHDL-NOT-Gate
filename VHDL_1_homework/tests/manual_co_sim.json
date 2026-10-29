@@ -1,0 +1,14 @@
+{
+  "environment": "Logisim-evolution 5.0.0 with installed Questa co-simulation",
+  "date": "2026-10-29",
+  "checks": [
+    {"circuit": "P1_logic", "inputs": "a=b=c=d=1", "observed": "out1=1, out2=1", "capture": "P1_all_one.png"},
+    {"circuit": "P2_mux", "inputs": "e=1, all other data inputs=0, ch=100", "observed": "data=1", "capture": "P2_select_e.png"},
+    {"circuit": "P3_letters", "inputs": "en=1, dat=000", "observed": "A", "capture": "P3_letter_A.png"},
+    {"circuit": "P4_vote25", "inputs": "vt=0x0001fff (13 ones)", "observed": "result=1", "capture": "P4_thirteen_votes.png"},
+    {"circuit": "P4_vote25", "inputs": "vt=0x0000fff (12 ones)", "observed": "result=0", "capture": "P4_twelve_votes.png"},
+    {"circuit": "P5_count13", "inputs": "vt=0x1fff, en=1", "observed": "d, output pattern 0x7a", "capture": "P5_thirteen_d.png"},
+    {"circuit": "P5_count13", "inputs": "vt=0x1fff, en=0", "observed": "all segments off", "capture": "P5_enable_off.png"}
+  ],
+  "scope": "Representative interactive checks only; exhaustive and sampled input tests are recorded separately in results.json and questa.log."
+}

@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project source="5.0.0" version="1.0">
+Self-contained VHDL homework project for Logisim-evolution 5.0.0.
+<lib desc="#Wiring" name="0" />
+  <lib desc="#Gates" name="1" />
+  <lib desc="#Plexers" name="2" />
+  <lib desc="#Arithmetic" name="3" />
+  <lib desc="#FPArithmetic" name="4" />
+  <lib desc="#Memory" name="5" />
+  <lib desc="#I/O" name="6" />
+  <lib desc="#TTL" name="7" />
+  <lib desc="#TCL" name="8" />
+  <lib desc="#Base" name="9" />
+  <main name="P3_letters" />
+  <options>
+    <a name="gateUndefined" val="ignore" />
+    <a name="simlimit" val="1000" />
+    <a name="simrand" val="0" />
+  </options>
+  <toolbar>
+    <tool name="Poke Tool" />
+    <tool name="Edit Tool" />
+    <tool name="Wiring Tool" />
+    <tool name="Text Tool" />
+  </toolbar>
+  <circuit name="P3_letters">
+    <a name="appearance" val="logisim_evolution" />
+    <a name="circuit" val="P3_letters" />
+    <a name="circuitnamedboxfixedsize" val="true" />
+    <a name="simulationFrequency" val="1.0" />
+    <comp name="Text" loc="(70,40)" lib="9">
+      <a name="text" val="3. Letter decoder and seven-segment display" />
+      <a name="font" val="SansSerif bold 18" />
+      <a name="halign" val="left" />
+    </comp>
+    <comp name="Text" loc="(70,70)" lib="9">
+      <a name="text" val="Poke inputs to change values. Enable VHDL simulation in the Simulate menu." />
+      <a name="font" val="SansSerif plain 12" />
+      <a name="halign" val="left" />
+    </comp>
+    <comp name="letter_display" loc="(500,200)" />
+    <comp name="Pin" loc="(150,200)" lib="0">
+      <a name="appearance" val="NewPins" />
+      <a name="facing" val="east" />
+      <a name="type" val="input" />
+      <a name="width" val="1" />
+      <a name="label" val="en" />
+      <a name="labelloc" val="north" />
+      <a name="radix" val="2" />
+      <a name="initial" val="0x1" />
+    </comp>
+    <wire from="(150,200)" to="(280,200)" />
+    <comp name="Pin" loc="(150,220)" lib="0">
+      <a name="appearance" val="NewPins" />
+      <a name="facing" val="east" />
+      <a name="type" val="input" />
+      <a name="width" val="3" />
+      <a name="label" val="dat" />
+      <a name="labelloc" val="north" />
+      <a name="radix" val="2" />
+      <a name="initial" val="0x0" />
+    </comp>
+    <wire from="(150,220)" to="(280,220)" />
+    <comp name="Pin" loc="(570,90)" lib="0">
+      <a name="appearance" val="NewPins" />
+      <a name="facing" val="west" />
+      <a name="type" val="output" />
+      <a name="width" val="8" />
+      <a name="label" val="segments_hex" />
+      <a name="labelloc" val="north" />
+      <a name="radix" val="16" />
+      <a name="initial" val="0x0" />
+    </comp>
+    <wire from="(500,200)" to="(540,200)" />
+    <wire from="(540,200)" to="(540,90)" />
+    <wire from="(540,90)" to="(570,90)" />
+    <wire from="(540,200)" to="(570,200)" />
+    <wire from="(570,200)" to="(570,300)" />
+    <comp name="Splitter" loc="(570,300)" lib="0">
+      <a name="facing" val="east" />
+      <a name="fanout" val="8" />
+      <a name="incoming" val="8" />
+      <a name="appear" val="left" />
+      <a name="spacing" val="2" />
+      <a name="bit0" val="7" />
+      <a name="bit1" val="6" />
+      <a name="bit2" val="5" />
+      <a name="bit3" val="4" />
+      <a name="bit4" val="3" />
+      <a name="bit5" val="2" />
+      <a name="bit6" val="1" />
+      <a name="bit7" val="0" />
+    </comp>
+    <wire from="(590,150)" to="(650,150)" />
+    <comp name="Tunnel" loc="(650,150)" lib="0">
+      <a name="label" val="a" />
+      <a name="facing" val="west" />
+    </comp>
+    <wire from="(590,170)" to="(650,170)" />
+    <comp name="Tunnel" loc="(650,170)" lib="0">
+      <a name="label" val="b" />
+      <a name="facing" val="west" />
+    </comp>
+    <wire from="(590,190)" to="(650,190)" />
+    <comp name="Tunnel" loc="(650,190)" lib="0">
+      <a name="label" val="c" />
+      <a name="facing" val="west" />
+    </comp>
+    <wire from="(590,210)" to="(650,210)" />
+    <comp name="Tunnel" loc="(650,210)" lib="0">
+      <a name="label" val="d" />
+      <a name="facing" val="west" />
+    </comp>
+    <wire from="(590,230)" to="(650,230)" />
+    <comp name="Tunnel" loc="(650,230)" lib="0">
+      <a name="label" val="e" />
+      <a name="facing" val="west" />
+    </comp>
+    <wire from="(590,250)" to="(650,250)" />
+    <comp name="Tunnel" loc="(650,250)" lib="0">
+      <a name="label" val="f" />
+      <a name="facing" val="west" />
+    </comp>
+    <wire from="(590,270)" to="(650,270)" />
+    <comp name="Tunnel" loc="(650,270)" lib="0">
+      <a name="label" val="g" />
+      <a name="facing" val="west" />
+    </comp>
+    <wire from="(590,290)" to="(650,290)" />
+    <comp name="Tunnel" loc="(650,290)" lib="0">
+      <a name="label" val="dp" />
+      <a name="facing" val="west" />
+    </comp>
+    <comp name="7-Segment Display" loc="(770,200)" lib="6">
+      <a name="active" val="true" />
+      <a name="decimalPoint" val="true" />
+    </comp>
+    <wire from="(770,200)" to="(770,170)" />
+    <wire from="(770,170)" to="(710,170)" />
+    <comp name="Tunnel" loc="(710,170)" lib="0">
+      <a name="label" val="g" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(780,200)" to="(780,150)" />
+    <wire from="(780,150)" to="(710,150)" />
+    <comp name="Tunnel" loc="(710,150)" lib="0">
+      <a name="label" val="f" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(790,200)" to="(790,130)" />
+    <wire from="(790,130)" to="(710,130)" />
+    <comp name="Tunnel" loc="(710,130)" lib="0">
+      <a name="label" val="a" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(800,200)" to="(800,110)" />
+    <wire from="(800,110)" to="(710,110)" />
+    <comp name="Tunnel" loc="(710,110)" lib="0">
+      <a name="label" val="b" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(770,260)" to="(770,290)" />
+    <wire from="(770,290)" to="(710,290)" />
+    <comp name="Tunnel" loc="(710,290)" lib="0">
+      <a name="label" val="e" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(780,260)" to="(780,310)" />
+    <wire from="(780,310)" to="(710,310)" />
+    <comp name="Tunnel" loc="(710,310)" lib="0">
+      <a name="label" val="d" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(790,260)" to="(790,330)" />
+    <wire from="(790,330)" to="(710,330)" />
+    <comp name="Tunnel" loc="(710,330)" lib="0">
+      <a name="label" val="c" />
+      <a name="facing" val="east" />
+    </comp>
+    <wire from="(800,260)" to="(800,350)" />
+    <wire from="(800,350)" to="(710,350)" />
+    <comp name="Tunnel" loc="(710,350)" lib="0">
+      <a name="label" val="dp" />
+      <a name="facing" val="east" />
+    </comp>
+    <comp name="Text" loc="(700,390)" lib="9">
+      <a name="text" val="1 = segment ON; dp always OFF." />
+      <a name="font" val="SansSerif plain 12" />
+      <a name="halign" val="left" />
+    </comp>
+    <comp name="Text" loc="(70,440)" lib="9">
+      <a name="text" val="dat: 0=A, 1=b, 2=C, 3=d, 4=F, 5=G; 6/7=blank." />
+      <a name="font" val="SansSerif plain 13" />
+      <a name="halign" val="left" />
+    </comp>
+    <comp name="Text" loc="(70,465)" lib="9">
+      <a name="text" val="en=0 blanks the display. Output order: abcdefgdp." />
+      <a name="font" val="SansSerif plain 13" />
+      <a name="halign" val="left" />
+    </comp>
+  </circuit>
+  <vhdl appearance="logisim_evolution" name="letter_display">library ieee;
+use ieee.std_logic_1164.all;
+
+-- Problem 3: display the letters a, b, c, d, f, g.
+-- Seven-segment approximations: A, b, C, d, F, G.
+-- display(7 downto 0) = a b c d e f g dp; 1 = segment on.
+-- dat: 000=A, 001=b, 010=C, 011=d, 100=F, 101=G.
+entity letter_display is
+    port (
+        en      : in  std_logic;
+        dat     : in  std_logic_vector(2 downto 0);
+        display : out std_logic_vector(7 downto 0)
+    );
+end entity letter_display;
+
+architecture rtl of letter_display is
+begin
+    process(en, dat)
+    begin
+        display &lt;= "00000000";
+        if en = '1' then
+            case dat is
+                when "000" =&gt; display &lt;= "11101110"; -- A
+                when "001" =&gt; display &lt;= "00111110"; -- b
+                when "010" =&gt; display &lt;= "10011100"; -- C
+                when "011" =&gt; display &lt;= "01111010"; -- d
+                when "100" =&gt; display &lt;= "10001110"; -- F
+                when "101" =&gt; display &lt;= "10111100"; -- G
+                when others =&gt; display &lt;= "00000000";
+            end case;
+        end if;
+    end process;
+end architecture rtl;
+</vhdl>
+</project>

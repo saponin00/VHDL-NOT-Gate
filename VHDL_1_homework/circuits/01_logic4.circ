@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project source="5.0.0" version="1.0">
+Self-contained VHDL homework project for Logisim-evolution 5.0.0.
+<lib desc="#Wiring" name="0" />
+  <lib desc="#Gates" name="1" />
+  <lib desc="#Plexers" name="2" />
+  <lib desc="#Arithmetic" name="3" />
+  <lib desc="#FPArithmetic" name="4" />
+  <lib desc="#Memory" name="5" />
+  <lib desc="#I/O" name="6" />
+  <lib desc="#TTL" name="7" />
+  <lib desc="#TCL" name="8" />
+  <lib desc="#Base" name="9" />
+  <main name="P1_logic" />
+  <options>
+    <a name="gateUndefined" val="ignore" />
+    <a name="simlimit" val="1000" />
+    <a name="simrand" val="0" />
+  </options>
+  <toolbar>
+    <tool name="Poke Tool" />
+    <tool name="Edit Tool" />
+    <tool name="Wiring Tool" />
+    <tool name="Text Tool" />
+  </toolbar>
+  <circuit name="P1_logic">
+    <a name="appearance" val="logisim_evolution" />
+    <a name="circuit" val="P1_logic" />
+    <a name="circuitnamedboxfixedsize" val="true" />
+    <a name="simulationFrequency" val="1.0" />
+    <comp name="Text" loc="(70,40)" lib="9">
+      <a name="text" val="1. Four-input AND and OR" />
+      <a name="font" val="SansSerif bold 18" />
+      <a name="halign" val="left" />
+    </comp>
+    <comp name="Text" loc="(70,70)" lib="9">
+      <a name="text" val="Poke inputs to change values. Enable VHDL simulation in the Simulate menu." />
+      <a name="font" val="SansSerif plain 12" />
+      <a name="halign" val="left" />
+    </comp>
+    <comp name="logic4" loc="(500,200)" />
+    <comp name="Pin" loc="(150,200)" lib="0">
+      <a name="appearance" val="NewPins" />
+      <a name="facing" val="east" />
+      <a name="type" val="input" />
+      <a name="width" val="1" />
+      <a name="label" val="a" />
+      <a name="labelloc" val="north" />
+      <a name="radix" val="2" />
+      <a name="initial" val="0x1" />
+    </comp>
+    <wire from="(150,200)" to="(280,200)" />
+    <comp name="Pin" loc="(150,220)" lib="0">
+      <a name="appearance" val="NewPins" />
+      <a name="facing" val="east" />
+      <a name="type" val="input" />
+      <a name="width" val="1" />
+      <a name="label" val="b" />
+      <a name="labelloc" val="north" />
+      <a name="radix" val="2" />
+      <a name="initial" val="0x1" />
+    </comp>
+    <wire from="(150,220)" to="(280,220)" />
+    <comp name="Pin" loc="(150,240)" lib="0">
+      <a name="appearance" val="NewPins" />
+      <a name="facing" val="east" />
+      <a name="type" val="input" />
+      <a name="width" val="1" />
+      <a name="label" val="c" />
+      <a name="labelloc" val="north" />
+      <a name="radix" val="2" />
+      <a name="initial" val="0x1" />
+    </comp>
+    <wire from="(150,240)" to="(280,240)" />
+    <comp name="Pin" loc="(150,260)" lib="0">
+      <a name="appearance" val="NewPins" />
+      <a name="facing" val="east" />
+      <a name="type" val="input" />
+      <a name="width" val="1" />
+      <a name="label" val="d" />
+      <a name="labelloc" val="north" />
+      <a name="radix" val="2" />
+      <a name="initial" val="0x1" />
+    </comp>
+    <wire from="(150,260)" to="(280,260)" />
+    <comp name="Pin" loc="(650,200)" lib="0">
+      <a name="appearance" val="NewPins" />
+      <a name="facing" val="west" />
+      <a name="type" val="output" />
+      <a name="width" val="1" />
+      <a name="label" val="out1" />
+      <a name="labelloc" val="north" />
+      <a name="radix" val="2" />
+      <a name="initial" val="0x0" />
+    </comp>
+    <wire from="(500,200)" to="(650,200)" />
+    <comp name="Pin" loc="(650,220)" lib="0">
+      <a name="appearance" val="NewPins" />
+      <a name="facing" val="west" />
+      <a name="type" val="output" />
+      <a name="width" val="1" />
+      <a name="label" val="out2" />
+      <a name="labelloc" val="north" />
+      <a name="radix" val="2" />
+      <a name="initial" val="0x0" />
+    </comp>
+    <wire from="(500,220)" to="(650,220)" />
+    <comp name="Text" loc="(70,440)" lib="9">
+      <a name="text" val="AND = 1 only when a=b=c=d=1." />
+      <a name="font" val="SansSerif plain 13" />
+      <a name="halign" val="left" />
+    </comp>
+    <comp name="Text" loc="(70,465)" lib="9">
+      <a name="text" val="OR = 1 when at least one input is 1." />
+      <a name="font" val="SansSerif plain 13" />
+      <a name="halign" val="left" />
+    </comp>
+  </circuit>
+  <vhdl appearance="logisim_evolution" name="logic4">library ieee;
+use ieee.std_logic_1164.all;
+
+-- Problem 1: four-input AND and OR gates.
+entity logic4 is
+    port (
+        a, b, c, d : in  std_logic;
+        out1       : out std_logic;
+        out2       : out std_logic
+    );
+end entity logic4;
+
+architecture rtl of logic4 is
+begin
+    out1 &lt;= a and b and c and d;
+    out2 &lt;= a or b or c or d;
+end architecture rtl;
+</vhdl>
+</project>

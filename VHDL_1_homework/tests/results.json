@@ -1,0 +1,15 @@
+{
+  "vhdl_standard": "2002",
+  "test_cases": 23213,
+  "status": "PASS",
+  "circuit_files": 6,
+  "embedded_source_checks": 10,
+  "problem_cases": {
+    "P1": 16,
+    "P2": 2048,
+    "P3": 16,
+    "P4": 4748,
+    "P5": 16385
+  },
+  "scope": "All binary inputs for P1/P2/P3/P5; count/position/random/boundary tests for P4. E/F unreachable for 13-bit input."
+}
