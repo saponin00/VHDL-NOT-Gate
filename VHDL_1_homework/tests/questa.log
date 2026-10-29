@@ -1,6 +1,6 @@
 
 Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
-Start time: 14:47:17 on Oct 29,2026
+Start time: 19:58:44 on Oct 29,2026
 vcom -2002 01_logic4.vhd 02_mux8_1.vhd 03_letter_display.vhd 04_vote25.vhd 05_count13_display.vhd tb_homework.vhd 
 ** Note: (vcom-220) 'C:/VHDL-SIMULATION/questa_fse/win64/../modelsim.ini' is used as the ini file.
 -- Loading package STANDARD
@@ -24,7 +24,7 @@ vcom -2002 01_logic4.vhd 02_mux8_1.vhd 03_letter_display.vhd 04_vote25.vhd 05_co
 -- Loading entity letter_display
 -- Loading entity vote25
 -- Loading entity count13_display
-End time: 14:47:17 on Oct 29,2026, Elapsed time: 0:00:00
+End time: 19:58:45 on Oct 29,2026, Elapsed time: 0:00:01
 Errors: 0, Warnings: 0
 
 Reading pref.tcl
@@ -33,7 +33,7 @@ Reading pref.tcl
 
 # ** Note: (vsim-220) 'C:/VHDL-SIMULATION/questa_fse/win64/../modelsim.ini' is used as the ini file.
 # vsim -c work.tb_homework -do "verify.do" 
-# Start time: 14:47:19 on Oct 29,2026
+# Start time: 19:58:47 on Oct 29,2026
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Note: (vopt-220) 'C:/VHDL-SIMULATION/questa_fse/win64/../modelsim.ini' is used as the ini file.
 # //  Questa Altera Starter FPGA Edition-64
@@ -68,5 +68,5 @@ Reading pref.tcl
 #    Time: 23213 ns  Iteration: 0  Instance: /tb_homework
 # ** Note: ALL PASS: 23213 test cases
 #    Time: 23213 ns  Iteration: 0  Instance: /tb_homework
-# End time: 14:47:21 on Oct 29,2026, Elapsed time: 0:00:02
+# End time: 19:58:50 on Oct 29,2026, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0

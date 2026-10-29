@@ -31,8 +31,8 @@
   },
   {
     "path": "circuits/VHDL1_all.circ",
-    "sha256": "111cac595cfeaf07b8c485d45eec7a0aa659985ca33ed6c81c5a3e96c04efb0e",
-    "bytes": 30039
+    "sha256": "412e360d836f3938a7ed88be46e576b39f20ff2eef45eb555916dd1263f25a32",
+    "bytes": 25823
   },
   {
     "path": "evidence/P1_all_one.png",
@@ -55,11 +55,6 @@
     "bytes": 166718
   },
   {
-    "path": "evidence/P4_twelve_votes.png",
-    "sha256": "c07fc3853c8cfbf53d1739ac43743834a971264167057a4dbfa47c37e9a5f11f",
-    "bytes": 171793
-  },
-  {
     "path": "evidence/P5_enable_off.png",
     "sha256": "33e20196707733838da4bd58167dd06c0ce29c92170de6298a7edc366f337d60",
     "bytes": 217482
@@ -71,18 +66,18 @@
   },
   {
     "path": "README.md",
-    "sha256": "0f2cd191f89e3f613d2b5c739bbda198bfcf424a2b799f61804fd70ec64a6675",
-    "bytes": 3644
+    "sha256": "5d693eeaa8a9e8323c81a069a1669a7a5d088ea005b4aa69da14913b82b9473e",
+    "bytes": 4183
   },
   {
     "path": "report/report.md",
-    "sha256": "ee4aed5e38b42b0cda66d9540973015f8cce46125be994fc652a71ea9fb34bfa",
-    "bytes": 15602
+    "sha256": "a29df9574d9b34c3cfa6e58183ebad3e4b912faea0e0d6bc6a47f1fa9942f347",
+    "bytes": 3273
   },
   {
     "path": "report/VHDL1_report.pdf",
-    "sha256": "8d0a6f10ec9d26a8d32b28f61c9189647472bbc373fe5027ecff2f8a1876864a",
-    "bytes": 753303
+    "sha256": "7021ec6ef1e174bbf02b3ae2e015a8437d33d9386a802e371789912ac025eec7",
+    "bytes": 1504399
   },
   {
     "path": "src/01_logic4.vhd",
@@ -121,12 +116,12 @@
   },
   {
     "path": "tests/manual_co_sim.json",
-    "sha256": "4782320ecd590c02b7e020757e37d4117dca41b58cd90e7514d29aaa34e62b04",
-    "bytes": 1119
+    "sha256": "6362ddda3b56c1c54816c8f64a2db796104bf886a55a5266b4cddb0ba9688d0d",
+    "bytes": 1351
   },
   {
     "path": "tests/questa.log",
-    "sha256": "36745d60b6f89b883a9c4e7cbcee5a1cc31b3f4ab932b9c129c1c1223b0d1505",
+    "sha256": "f80bed2831bab780f71888e1af717d908b0d9bc43836c272eeeadd187612e76b",
     "bytes": 3117
   },
   {
@@ -140,14 +135,29 @@
     "bytes": 9807
   },
   {
+    "path": "tests/wiring_audit.json",
+    "sha256": "2f4528678b5ff7e95709ea542b81705e382e6b7cdc52fa17fc6c43fdf1791dc4",
+    "bytes": 2632
+  },
+  {
+    "path": "tools/audit_wiring.py",
+    "sha256": "382da05daca92bd15861964049d75f4d378c06575648a0c5389e1fffb4c83d8a",
+    "bytes": 5762
+  },
+  {
     "path": "tools/build_circuits.py",
     "sha256": "ec862a5ccd0c1cd419683eee37bfb8da39a6d2f6b68ff96fc1752393a0b3915f",
     "bytes": 7608
   },
   {
+    "path": "tools/build_essential_report.py",
+    "sha256": "e5a0a9565eb8c5bb82310dc10a23b3e12eb54acc5607f78640fd2041ec0efddf",
+    "bytes": 5972
+  },
+  {
     "path": "tools/build_report.py",
-    "sha256": "aaf9d2182dc35343edd3795f17e6b44a867fbf951f5dff68e21d66a0087394d2",
-    "bytes": 15706
+    "sha256": "577ea66464a423a6dedbce6ad7fbb1002db737bcff174a7338106258e6b0caab",
+    "bytes": 141
   },
   {
     "path": "tools/validate_circuits.py",
