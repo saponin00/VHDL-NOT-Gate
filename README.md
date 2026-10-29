@@ -1,1 +1,0 @@
-# VHDL-NOT-Gate
