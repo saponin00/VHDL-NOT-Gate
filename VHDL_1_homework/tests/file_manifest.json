@@ -1,33 +1,38 @@
 [
   {
+    "path": ".gitattributes",
+    "sha256": "dbe8957a344a6bff1415c8c9b5c24c492df52226f4f14d17a3f16eba5cd01428",
+    "bytes": 58
+  },
+  {
     "path": "circuits/01_logic4.circ",
-    "sha256": "5154034ea28d09bb276f10ddcce4d3d01e5bb5ca34a16dde583c7e5c00c90aaa",
-    "bytes": 4896
+    "sha256": "eff916bf9c686efe4b8b73b858c5e2edd10a8af17966821b6617925918a9f8dd",
+    "bytes": 4760
   },
   {
     "path": "circuits/02_mux8_1.circ",
-    "sha256": "b97390cceb31d336f8a5509f3039a398dd43076c1ad7495ac405f0d049fc5e06",
-    "bytes": 6887
+    "sha256": "9a648594fd914e89c38a2686dd0345e88f4398def480e7a8ec6e2928f31c7492",
+    "bytes": 6699
   },
   {
     "path": "circuits/03_letter_display.circ",
-    "sha256": "45c78d105ecf3ada8b5e1be22f165b16b0bd2bd13634707c0de690fa9a040722",
-    "bytes": 8862
+    "sha256": "e981f7f9fbf09a10fc15013ff5ec80d0a7d1061bf8547a08476717401cdb7930",
+    "bytes": 8627
   },
   {
     "path": "circuits/04_vote25.circ",
-    "sha256": "e480fe266107b795bf9f434926fdfe54e28b96df43d4735781e4847c6c340c21",
-    "bytes": 3642
+    "sha256": "c9eb3b31f4fc45522d8598cd337eec50e35c754b9e6a7641b223b3c9b3ccc2cf",
+    "bytes": 3537
   },
   {
     "path": "circuits/05_count13_display.circ",
-    "sha256": "33b8442661facd28ddd7521a5e4eb61a6e3f778a5baac02cfca510588b8b55cb",
-    "bytes": 9892
+    "sha256": "2deff27c07ed2c0ac890adbc19e74b21a02d4f392fb586b5b52a5d91779f4dbb",
+    "bytes": 9635
   },
   {
     "path": "circuits/VHDL1_all.circ",
-    "sha256": "2d5c3b592cbd4259ee17d1886b0404b7580ca153da25cb11a0366cd3bc2a62f8",
-    "bytes": 30860
+    "sha256": "111cac595cfeaf07b8c485d45eec7a0aa659985ca33ed6c81c5a3e96c04efb0e",
+    "bytes": 30039
   },
   {
     "path": "evidence/P1_all_one.png",
@@ -71,8 +76,8 @@
   },
   {
     "path": "report/report.md",
-    "sha256": "abeb5b569b2c73d99dc56ad35cc5b2cb9e152f452681d5ea1ef1a82df4348cc1",
-    "bytes": 15964
+    "sha256": "ee4aed5e38b42b0cda66d9540973015f8cce46125be994fc652a71ea9fb34bfa",
+    "bytes": 15602
   },
   {
     "path": "report/VHDL1_report.pdf",
@@ -106,13 +111,13 @@
   },
   {
     "path": "tests/design_manifest.json",
-    "sha256": "0b1ae404ce5f154e5bb6e3eb34b8a21ad88abc5dec4587ea56718de7699a84c2",
-    "bytes": 3125
+    "sha256": "7ce91880d4106e3b29016e233795eec250c8401a68133a0c74b91204e8f8b9fb",
+    "bytes": 2939
   },
   {
     "path": "tests/logisim_import_results.json",
-    "sha256": "51cae5e35136e9e76766035b156057b35999543a803ab27319321ce323acd044",
-    "bytes": 780
+    "sha256": "a91c07d1c3241cda6060dab080dd3d081fa46f913fa52f2255a69ed3cc6d3ffe",
+    "bytes": 737
   },
   {
     "path": "tests/manual_co_sim.json",
@@ -121,13 +126,13 @@
   },
   {
     "path": "tests/questa.log",
-    "sha256": "3484cd73d2079a598fba2b2ff4124d5dc2af6e8e42a302fc768b03370cdfa39b",
-    "bytes": 3189
+    "sha256": "36745d60b6f89b883a9c4e7cbcee5a1cc31b3f4ab932b9c129c1c1223b0d1505",
+    "bytes": 3117
   },
   {
     "path": "tests/results.json",
-    "sha256": "3262edfe7c7ea3621465612d0b4079d112615824c2c024fb0182a8ca30ade206",
-    "bytes": 370
+    "sha256": "32278a114608cb1fe391d1de9da71533e8b225766a9da928ccd914f58d7702a5",
+    "bytes": 356
   },
   {
     "path": "tests/tb_homework.vhd",
